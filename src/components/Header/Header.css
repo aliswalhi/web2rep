@@ -1,0 +1,147 @@
+.header-container {
+  position: relative;
+  background-color: #0052cc; 
+  color: #fff;
+  padding: 60px 0;
+  text-align: center;
+  overflow: hidden;
+  width: 100vw;
+  margin: 0;
+  box-sizing: border-box;
+  left: 0; 
+}
+
+.header-content {
+  position: relative;
+  z-index: 1;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+
+.header-subtitle {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0 0 30px 0;
+  opacity: 0.9;
+}
+
+.search-form-container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.search-form-title {
+  font-size: 1rem;
+  color: #333;
+  margin: 0 0 15px 0;
+  font-weight: 600;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.form-group {
+  flex: 1;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 0.9rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  color: #333;
+}
+
+.form-options {
+  display: flex;
+  gap: 15px;
+}
+
+.form-option {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.9rem;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.form-option input[type="radio"] {
+  accent-color: #007bff;
+}
+
+.search-button {
+  background-color: #f5a623;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.search-button:hover {
+  background-color: #e69500;
+}
+
+
+.clouds-background {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw; 
+  height: 100px;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="1" d="M0,160L48,176C96,192,192,224,288,213.3C384,203,480,149,576,138.7C672,128,768,160,864,181.3C960,203,1056,213,1152,197.3C1248,181,1344,139,1392,117.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+  background-size: cover;
+  z-index: 0;
+}
+
+
+@media (max-width: 768px) {
+  .header-container {
+    padding: 40px 0;
+  }
+
+  .header-title {
+    font-size: 1.8rem;
+  }
+
+  .header-subtitle {
+    font-size: 1rem;
+  }
+
+  .search-form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .form-group {
+    width: 100%;
+  }
+
+  .form-options {
+    justify-content: center;
+  }
+
+  .search-button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,75 @@
+.recent-searches-container {
+  max-width: 10000px;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  
+}
+
+.recent-searches-title {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.searches-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.search-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px rgba(11, 11, 11, 0.915);
+  width: 45%;
+}
+
+.route-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 5px;
+}
+
+.airport-code {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #007bff;
+  margin: 0;
+}
+
+.route {
+  font-size: 1rem;
+  color: #007bff;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.date-text {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 2px;
+  text-align: center;
+}
+
+
+@media (max-width: 768px) {
+  .searches-list {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search-item {
+    width: 100%;
+  }
+}
